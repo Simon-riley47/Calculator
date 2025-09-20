@@ -35,7 +35,7 @@ function clearDisplay() {
 }
 
 function displayValue(displayText, operator) {
-    if (display.innerText === '0') {
+    if (display.innerText === '0' || display.innerText === 'Invalid Input') {
         display.innerText = displayText;
         display.value = operator;
     } else {
